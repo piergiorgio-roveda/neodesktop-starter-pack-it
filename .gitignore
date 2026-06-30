@@ -1,0 +1,7 @@
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Override personali di Claude (non condivisi)
+.claude/settings.local.json
