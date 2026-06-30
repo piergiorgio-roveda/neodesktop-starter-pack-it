@@ -62,7 +62,41 @@ nell'intervista (campo `[LINGUA]`) e da quel momento governa tutto.
    invariati i token fissi** — i nomi dei campi del frontmatter (`direction`, `status`,
    `date`, `type`, `reply_to`), i valori `to-pj`/`from-pj`/`unread`/`read`/`answered`, e il
    blocco YAML di esempio. Si traduce solo il testo attorno.
-7. **Primo messaggio a PJ.** Crea un messaggio `to-pj` di "setup completato", così
+7. **Permessi per salvare e sincronizzare — chiedi prima di concedere.** Il passo
+   successivo (il primo messaggio a PJ) usa Git per **salvare** il tuo lavoro e, se vuoi,
+   **inviarlo** a Piergiorgio. Perché Claude non debba fermarsi a chiederti conferma a ogni
+   comando, può ricordare il tuo consenso a usare Git in un piccolo file di configurazione.
+   **Non lo crea di nascosto: te lo chiede adesso, in chiaro.** Procedi così:
+   - **Spiega in parole semplici** cosa riguardano questi permessi: *solo* Git — lo strumento
+     che conserva la storia dei tuoi file e li sincronizza. Niente altro. Nel dettaglio:
+     salvare una versione (`git add`, `git commit`), inviare e ricevere aggiornamenti
+     (`git push`, `git pull`), consultare stato e storia (`git status`, `git log`).
+   - **Chiedi il consenso esplicito** a concedere questi sei permessi. **Non scrivere nulla
+     prima della sua risposta.**
+   - **Se acconsente:** crea il file `.claude/settings.json` con esattamente questo contenuto,
+     poi confermagli che è fatto e che può rileggerlo o cambiarlo quando vuole — è un file
+     leggibile come tutti gli altri, niente di nascosto:
+
+     ```json
+     {
+       "permissions": {
+         "allow": [
+           "Bash(git add:*)",
+           "Bash(git commit:*)",
+           "Bash(git push:*)",
+           "Bash(git pull:*)",
+           "Bash(git status:*)",
+           "Bash(git log:*)"
+         ]
+       }
+     }
+     ```
+
+   - **Se rifiuta o è incerto:** va bene così, **non bloccarti**. Spiega che potrà concederli
+     più avanti — basta rilanciare questo passo — e che nel frattempo, al passo successivo,
+     Claude gli chiederà conferma a ogni comando Git (oppure potrà salvare a mano). Prosegui
+     comunque.
+8. **Primo messaggio a PJ.** Crea un messaggio `to-pj` di "setup completato", così
    Piergiorgio sa che sei partito e prepara i primi aggiornamenti. Procedi così:
    - **Crea il file** in `communications/` con nome `<YYYY-MM-DD>-to-pj-<slug>.md` (data di
      oggi in ISO `YYYY-MM-DD`; `<slug>` = breve slug descrittivo **in `[LINGUA]`**, es.
@@ -88,7 +122,7 @@ nell'intervista (campo `[LINGUA]`) e da quel momento governa tutto.
      quindi spiega all'utente che il messaggio è salvato in locale e che la sincronizzazione
      con Piergiorgio avverrà non appena il remote sarà configurato. Non è un errore da
      correggere: è lo stato atteso del primo run.
-8. **Chiusura.** Di' che è tutto pronto e che può iniziare a usare il suo Claude facendo
+9. **Chiusura.** Di' che è tutto pronto e che può iniziare a usare il suo Claude facendo
    domande sul suo lavoro.
 
 ## Dopo /init
