@@ -34,7 +34,27 @@ assistenza, **sei tu a creare un repository privato e a invitare Piergiorgio** c
 collaboratore. Non è lui che entra nel tuo spazio: sei tu che apri la porta, quando e se
 vuoi.
 
-## 2. Dove trovare e come leggere questo documento
+## 2. I tre strati: modello, agente, neoDesktop
+
+Per capire bene cos'hai davanti, conviene tenere separate tre cose che spesso si confondono in
+una sola.
+
+- **Il modello** è la testa che ragiona — Opus, Sonnet, e fuori da Anthropic GPT, Gemini e
+  altri. Lo costruiscono e lo migliorano i grandi laboratori; cambia in fretta, ed è uguale
+  per tutti.
+- **L'agente** sono le mani e gli occhi — il software che mette quella testa a lavorare sui
+  tuoi file: Claude Code, Cowork, oppure Codex di OpenAI. Anche questo te lo dà un fornitore,
+  ed è identico per chiunque lo installi.
+- **Il neoDesktop** è la **tua conoscenza e il tuo metodo** — i tuoi progetti, le tue regole,
+  le decisioni prese e il perché, il modo in cui fai le cose. Questo strato non ha un
+  fornitore: sei tu. È l'unico davvero tuo, e l'unico che **cresce** mentre lavori.
+
+I primi due te li danno già fatti e cambiano in fretta; il terzo lo costruisci e resta.
+**Questo starter-pack è il punto di partenza del terzo strato**: lo scheletro del tuo
+neoDesktop, da riempire con il tuo lavoro. Il modello e l'agente li porti tu (qui, Claude
+Code); il neoDesktop lo rendi tuo con `/init` e con l'uso quotidiano.
+
+## 3. Dove trovare e come leggere questo documento
 
 Con ogni probabilità stai leggendo il **PDF**, che ti è arrivato **prima ancora del repo**.
 Ecco i **due indirizzi da cui parte tutto** — sono la cosa più importante di questa pagina:
@@ -60,15 +80,15 @@ Da lì in poi:
 Leggilo come una mappa: prima il *perché* (questa parte), poi il *cosa* (la mappa di
 provenienza), infine il *come* (la guida costruttiva).
 
-## 3. A cosa serve — due usi
+## 4. A cosa serve — due usi
 
 Questo documento serve a **due** scopi, e puoi scegliere quello che preferisci:
 
 1. **Capire ogni file del repo.** Se preferisci **clonare** o scaricare il repo pubblico
-   `neodesktop-starter-pack-it`, la *mappa di provenienza* (sezione 5) ti dice, file per
+   `neodesktop-starter-pack-it`, la *mappa di provenienza* (sezione 6) ti dice, file per
    file, cosa fa e perché c'è. La usi per ispezionare con cognizione ciò che hai davanti.
 2. **Ricostruire il repo da zero, in autonomia.** Se preferisci **non** scaricare nulla, la
-   *guida costruttiva* (sezione 6) ti accompagna a ricreare lo stesso spazio passo-passo,
+   *guida costruttiva* (sezione 7) ti accompagna a ricreare lo stesso spazio passo-passo,
    insieme al tuo Claude Code. Niente `git pull`, niente download di un pacchetto: i file
    nascono sul tuo computer, scritti da te e dal tuo agente.
 
@@ -76,7 +96,7 @@ Le due strade arrivano allo stesso punto. In entrambi i casi, alla fine lancerai
 rende lo spazio **tuo** (profilo, lingua, workflow). Non devi scegliere subito: puoi leggere,
 capire, e decidere dopo.
 
-## 4. Adozione senza fretta, e gli issue pubblici
+## 5. Adozione senza fretta, e gli issue pubblici
 
 **Non c'è alcuna fretta.** Anche se più avanti sarà utile attivare la condivisione del repo e
 fare pratica con i messaggi (`/message-to-pj`, `/message-from-pj`), **non è necessario
@@ -98,7 +118,7 @@ aperta.
 
 ---
 
-## 5. Mappa di provenienza — ogni file, cosa fa, perché
+## 6. Mappa di provenienza — ogni file, cosa fa, perché
 
 Tutti i file derivano dal **template neoDesktop**, lo scheletro comune da cui parte ogni
 spazio. Sono **testo semplice** (Markdown e qualche file di configurazione): leggibili,
@@ -159,7 +179,7 @@ nemmeno nella versione in un'altra lingua.
 
 ---
 
-## 6. Guida costruttiva — ricostruire il repo da zero
+## 7. Guida costruttiva — ricostruire il repo da zero
 
 Questa sezione ti accompagna a **ricreare lo stesso spazio senza scaricare il repo**. L'idea:
 apri il tuo Claude Code in una cartella vuota e, seguendo questi passi, **tu e il tuo agente
@@ -245,3 +265,20 @@ finché non l'hai concesso tu.
 Questo pacchetto è volutamente piccolo e trasparente. Se qualcosa non torna, o se hai un'idea
 per migliorarlo, apri un issue (pubblico) o scrivi in privato. Non c'è un modo "giusto" di
 andare di fretta: c'è solo il tuo ritmo.
+
+## Una nota su geoDesktop
+
+Un'ultima cosa, per non fare confusione con i nomi. **geoDesktop** è il neoDesktop di
+Piergiorgio: il suo spazio personale, ottimizzato per la sua professione — il GIS — e per il
+suo lavoro da libero professionista. È un neoDesktop come quello che costruirai tu, solo più
+maturo, cresciuto in mesi di lavoro.
+
+Ha però anche un secondo ruolo: è il **"fratello maggiore"** che seguirà tutti i nuovi
+neoDesktop che nascono — incluso il tuo. Non con una connessione diretta dentro il tuo spazio
+(quella non c'è, e non ci sarà), ma attraverso il **sistema di messaggi** che metterai in
+piedi quando vorrai (`/message-to-pj` e `/message-from-pj`): tu mandi un bisogno o una
+domanda, Piergiorgio — affiancato da geoDesktop — prepara un aggiornamento mirato e te lo
+rimanda. Ognuno resta a casa propria; a viaggiare sono solo i messaggi.
+
+E sì: **questo documento l'ha scritto proprio geoDesktop.** Consideralo un assaggio di cosa
+diventa un neoDesktop quando lo si vive per un po'.
