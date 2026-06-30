@@ -37,12 +37,18 @@ vuoi.
 ## 2. Dove trovare e come leggere questo documento
 
 Con ogni probabilità stai leggendo il **PDF**, che ti è arrivato **prima ancora del repo**.
-Ecco quindi dove trovare tutto il resto:
+Ecco i **due indirizzi da cui parte tutto** — sono la cosa più importante di questa pagina:
 
-- **Il repo pubblico**, dove questo documento vive insieme a tutti i file dello starter-pack:
-  https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it
-- **Il sorgente di questo documento** (Markdown), leggibile direttamente nel browser:
-  https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it/blob/master/PROVENANCE.it.md
+> ### Repo pubblico
+>
+> **https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it**
+>
+> ### Sorgente di questo documento (Markdown)
+>
+> **https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it/blob/master/PROVENANCE.it.md**
+
+Da lì in poi:
+
 - **Il PDF**, scaricabile da questo indirizzo (Google Drive, accessibile a chiunque abbia il
   link): https://drive.google.com/file/d/1b_Vcumax_HnJvGRzYTIp3rTHA28lqInM/view?usp=sharing —
   è autosufficiente: contiene tutto ciò che serve per capire e ricostruire il pacchetto,
