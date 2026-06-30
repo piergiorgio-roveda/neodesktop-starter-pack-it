@@ -36,9 +36,10 @@ vuoi.
 
 ## 2. Dove trovare e come leggere questo documento
 
-- **In PDF**, scaricabile da un indirizzo pubblico e stabile: **[URL-PDF]**. Il PDF è
-  autosufficiente: contiene tutto ciò che serve per capire e ricostruire il pacchetto, anche
-  senza aprire il repo.
+- **In PDF**, scaricabile da questo indirizzo (Google Drive, accessibile a chiunque abbia il
+  link): https://drive.google.com/file/d/1b_Vcumax_HnJvGRzYTIp3rTHA28lqInM/view?usp=sharing —
+  il PDF è autosufficiente: contiene tutto ciò che serve per capire e ricostruire il
+  pacchetto, anche senza aprire il repo.
 - **Con l'aiuto del tuo assistente AI.** Puoi darlo in pasto al tuo Claude Code (o a un altro
   LLM) e farti spiegare, tradurre o guidare passo-passo. È scritto apposta per essere
   leggibile sia da te sia da un agente.
