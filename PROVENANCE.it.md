@@ -4,9 +4,9 @@ Questo documento racconta **da dove viene** questo starter-pack, **cosa contiene
 e **come puoi ricostruirlo da solo**. È pensato per essere letto con calma — anche con
 l'aiuto del tuo assistente AI — prima di decidere se e come adottarlo.
 
-Lo trovi insieme ai file del repo pubblico
-`github.com/piergiorgio-roveda/neodesktop-starter-pack-it`, ed è disponibile anche in **PDF**
-(vedi sotto), così puoi leggerlo senza scaricare nulla.
+Lo trovi insieme ai file del **repo pubblico**
+https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it, ed è disponibile anche in
+**PDF** (vedi sotto), così puoi leggerlo senza scaricare nulla.
 
 ---
 
@@ -36,12 +36,19 @@ vuoi.
 
 ## 2. Dove trovare e come leggere questo documento
 
-- **In PDF**, scaricabile da questo indirizzo (Google Drive, accessibile a chiunque abbia il
+Con ogni probabilità stai leggendo il **PDF**, che ti è arrivato **prima ancora del repo**.
+Ecco quindi dove trovare tutto il resto:
+
+- **Il repo pubblico**, dove questo documento vive insieme a tutti i file dello starter-pack:
+  https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it
+- **Il sorgente di questo documento** (Markdown), leggibile direttamente nel browser:
+  https://github.com/piergiorgio-roveda/neodesktop-starter-pack-it/blob/master/PROVENANCE.it.md
+- **Il PDF**, scaricabile da questo indirizzo (Google Drive, accessibile a chiunque abbia il
   link): https://drive.google.com/file/d/1b_Vcumax_HnJvGRzYTIp3rTHA28lqInM/view?usp=sharing —
-  il PDF è autosufficiente: contiene tutto ciò che serve per capire e ricostruire il
-  pacchetto, anche senza aprire il repo.
-- **Con l'aiuto del tuo assistente AI.** Puoi darlo in pasto al tuo Claude Code (o a un altro
-  LLM) e farti spiegare, tradurre o guidare passo-passo. È scritto apposta per essere
+  è autosufficiente: contiene tutto ciò che serve per capire e ricostruire il pacchetto,
+  anche senza aprire il repo.
+- **Con l'aiuto del tuo assistente AI**, dandolo in pasto al tuo Claude Code (o a un altro
+  LLM) per farti spiegare, tradurre o guidare passo-passo: è scritto apposta per essere
   leggibile sia da te sia da un agente.
 
 Leggilo come una mappa: prima il *perché* (questa parte), poi il *cosa* (la mappa di
