@@ -82,15 +82,19 @@ provenienza), infine il *come* (la guida costruttiva).
 
 ## 4. A cosa serve — due usi
 
-Questo documento serve a **due** scopi, e puoi scegliere quello che preferisci:
+Questo documento serve a **due** scopi, che corrispondono a **due strade diverse e
+alternative**. Sono davvero separate: scegline una, non ti servono entrambe.
 
-1. **Capire ogni file del repo.** Se preferisci **clonare** o scaricare il repo pubblico
-   `neodesktop-starter-pack-it`, la *mappa di provenienza* (sezione 6) ti dice, file per
-   file, cosa fa e perché c'è. La usi per ispezionare con cognizione ciò che hai davanti.
-2. **Ricostruire il repo da zero, in autonomia.** Se preferisci **non** scaricare nulla, la
-   *guida costruttiva* (sezione 7) ti accompagna a ricreare lo stesso spazio passo-passo,
-   insieme al tuo Claude Code. Niente `git pull`, niente download di un pacchetto: i file
-   nascono sul tuo computer, scritti da te e dal tuo agente.
+1. **Clonare, e capire ogni file.** Questa strada **usa il repo**: cloni o scarichi
+   `neodesktop-starter-pack-it`, e la *mappa di provenienza* (sezione 6) ti dice, file per
+   file, cosa fa e perché c'è. Ti serve a ispezionare con cognizione ciò che hai scaricato.
+2. **Ricostruire da zero, senza toccare il repo.** Questa strada **non usa il repo**: parti da
+   una cartella vuota e la *guida costruttiva* (sezione 7) ti accompagna a ricreare lo stesso
+   spazio passo-passo, insieme al tuo Claude Code. Niente `git clone`, niente `git pull`,
+   nessun download. La guida è **autosufficiente**: tutto ciò che serve per costruire i file è
+   già scritto qui dentro, in questo documento (o nel suo PDF). **Non devi leggere il repo per
+   ricostruirlo** — al massimo puoi *sbirciare* il testo canonico di un file nel browser se ti
+   fa piacere confrontare, ma è un extra facoltativo, mai un passaggio richiesto.
 
 Le due strade arrivano allo stesso punto. In entrambi i casi, alla fine lancerai `/init`, che
 rende lo spazio **tuo** (profilo, lingua, workflow). Non devi scegliere subito: puoi leggere,
@@ -185,9 +189,11 @@ Questa sezione ti accompagna a **ricreare lo stesso spazio senza scaricare il re
 apri il tuo Claude Code in una cartella vuota e, seguendo questi passi, **tu e il tuo agente
 scrivete insieme** i file. Alla fine avrai uno spazio equivalente — e `/init` lo renderà tuo.
 
-Se in qualche punto vuoi vedere il "testo canonico" esatto di un file, puoi **leggerlo nel
-browser** sul repo pubblico (GitHub mostra ogni file senza bisogno di clonare): è un
-riferimento, non un download.
+Questa guida è **autosufficiente**: i passi qui sotto contengono tutto ciò che serve, e **non
+richiedono di aprire il repo**. Se — e solo se — vuoi confrontare un file che hai scritto con
+il suo "testo canonico", puoi **leggerlo nel browser** sul repo pubblico (GitHub mostra ogni
+file senza bisogno di clonare): resta un riferimento facoltativo, non un download e non un
+passaggio obbligato della ricostruzione.
 
 ### Prerequisiti
 
@@ -226,9 +232,11 @@ riferimento, non un download.
      aspetta risposta), `reply_to` (solo nelle risposte); e chi cambia gli stati (ognuno
      gestisce i messaggi che riceve).
    - `communications/_needs.md`: un quaderno vuoto dei bisogni, con un esempio commentato.
-6. **Crea le skill (`.claude/skills/`).** Per ciascuna, un file `SKILL.md` con un breve
-   frontmatter (`name`, `description` con il relativo `USE WHEN`) e la procedura. Ricorda che
-   i nomi dei comandi e i token `to-pj`/`from-pj`/`PJ` sono **fissi**:
+6. **Crea le skill (`.claude/skills/`).** Una skill è semplicemente un file di testo:
+   `<nome>/SKILL.md`, con un breve frontmatter (`name`, `description` con il relativo
+   `USE WHEN`) e la procedura. Il tuo agente le scrive come **qualsiasi altro documento** —
+   non serve che il comando esista già, né alcuno strumento speciale: stai solo scrivendo del
+   Markdown. Ricorda che i nomi dei comandi e i token `to-pj`/`from-pj`/`PJ` sono **fissi**:
    - **`init/SKILL.md`** (`/init`): benvenuto → intervista (raccogli **presto** la `[LINGUA]`)
      → compila `CLAUDE.md` e `context/_profilo.md` nella lingua scelta → ri-rendi nella stessa
      lingua i file-guida → **chiedi il consenso per i permessi Git e, solo se acconsente,
@@ -248,8 +256,15 @@ riferimento, non un download.
 8. **Inizializza Git e fai il primo commit.** `git init`, poi metti in stage i file che hai
    creato (con percorsi espliciti) e fai un commit iniziale. Il collegamento a un repository
    remoto può arrivare quando vorrai.
-9. **Lancia `/init`** — la skill che hai appena scritto al passo 6. È il *bootstrap*: prima
-   crei la skill insieme al tuo agente, poi la usi come comando. Ti intervista e trasforma lo
+9. **Lancia `/init`** — la skill che hai appena scritto al passo 6. Qui si chiude il
+   *bootstrap*, e vale la pena dirlo chiaramente perché sembra un paradosso e non lo è: per
+   **avere** il comando `/init` non ti serviva già il comando `/init`. Al passo 6 il tuo agente
+   ha scritto `init/SKILL.md` come **semplice file di testo** — e scrivere un file non richiede
+   nessuna skill preesistente. Una volta salvato quel file, Claude Code **scopre** la skill
+   dalla cartella `.claude/skills/` e ti mette a disposizione il comando `/init`. Prima il file
+   (scritto dall'agente), poi il comando (che quel file abilita): nessun uovo-gallina. Se il
+   comando non compare subito, chiudi e riapri Claude Code (o ricarica la finestra di VS Code):
+   le skill vengono lette all'avvio della sessione. Poi lancialo: ti intervista e trasforma lo
    scheletro nel tuo spazio personale, nella tua lingua. Da qui in poi è tuo.
 
 ### Verifica
