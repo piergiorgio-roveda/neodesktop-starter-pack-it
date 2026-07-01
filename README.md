@@ -1,5 +1,7 @@
 # neoDesktop — starter-pack (IT)
 
+> **English version:** https://github.com/piergiorgio-roveda/neodesktop-starter-pack-en
+
 Questo è lo **starter-pack pubblico** di un neoDesktop: uno spazio di lavoro con un agente
 AI, fatto di una cartella, pochi documenti in testo semplice che descrivono come lavori, e
 un agente (Claude Code) che li legge e lavora dentro al tuo processo.
