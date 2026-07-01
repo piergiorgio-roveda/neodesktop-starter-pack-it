@@ -129,7 +129,7 @@ quadre — `[NOME]`, `[LINGUA]`, … — che `/init` compila durante la prima in
 
 | File | Cosa fa | Perché c'è |
 |---|---|---|
-| `README.md` | Il punto d'ingresso del repo, bilingue (inglese/italiano). Spiega cos'è e il flusso di adozione self-service. | È la prima cosa che si legge atterrando sul repo pubblico. |
+| `README.md` | Il punto d'ingresso del repo, in italiano (la versione inglese vive nel repo gemello `neodesktop-starter-pack-en`). Spiega cos'è e il flusso di adozione self-service. | È la prima cosa che si legge atterrando sul repo pubblico. |
 | `CLAUDE.md` | Il **contratto** dell'agente: chi sei, come lavori, e le regole che segue sempre. L'agente lo legge a ogni sessione. Contiene segnaposto (`[NOME]`, `[PROFESSIONE]`, `[DOMINIO]`, `[LINGUA]`, `[WORKFLOW]`, `[STRUMENTI]`, `[TONO]`). | È il cuore del metodo: un prompt scritto una volta vale come un contratto stabile, così non ripeti le stesse istruzioni ogni volta. |
 | `PROVENANCE.it.md` | Questo documento. | Permette di capire e ricostruire il pacchetto in autonomia. |
 
@@ -166,7 +166,7 @@ nemmeno nella versione in un'altra lingua.
 
 | File | Cosa fa | Perché c'è |
 |---|---|---|
-| `context/_profilo.md` | Il tuo profilo in prosa breve (con segnaposto, compilati da `/init`): chi sei, come lavori, strumenti, tono preferito. | L'agente lo legge per risponderti già nel modo giusto. |
+| `context/_profilo.md` | Il tuo profilo in prosa breve: chi sei, come lavori, strumenti, tono preferito. Nel template ha i **segnaposto**, che **`/init` compila** durante l'intervista — non si scrive a mano. | L'agente lo legge per risponderti già nel modo giusto. |
 | `context/clients/_README.md` | Guida della cartella clienti: un file per cliente, **man mano** che servono (non crearne a vuoto). | Spiega come cresce la memoria sui clienti senza riempirla di file vuoti. |
 | `context/projects/_README.md` | Guida della cartella progetti: un file per progetto, man mano. | Idem, per i progetti. |
 
@@ -248,8 +248,9 @@ riferimento, non un download.
 8. **Inizializza Git e fai il primo commit.** `git init`, poi metti in stage i file che hai
    creato (con percorsi espliciti) e fai un commit iniziale. Il collegamento a un repository
    remoto può arrivare quando vorrai.
-9. **Lancia `/init`.** Ti intervista e trasforma lo scheletro nel tuo spazio personale, nella
-   tua lingua. Da qui in poi è tuo.
+9. **Lancia `/init`** — la skill che hai appena scritto al passo 6. È il *bootstrap*: prima
+   crei la skill insieme al tuo agente, poi la usi come comando. Ti intervista e trasforma lo
+   scheletro nel tuo spazio personale, nella tua lingua. Da qui in poi è tuo.
 
 ### Verifica
 
